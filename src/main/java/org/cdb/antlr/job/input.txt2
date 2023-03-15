@@ -1,0 +1,47 @@
+enable_alarm = 1
+enable_ctsdb = 1
+x=1;xx=2;
+slave_error      = (a || b);
+slave_error
+
+["a", "b"];
+
+host_res = host INC "127.0.0.13|127.0.0.1" ;
+sqlType_res = sqlType EQ "ADD|DEL"
+
+/*ka = host INCA ["127.0.0.13", "127"];*/
+
+k = ((host INC "127.0.0.13") || (host INC "127.0.0.1")) && (host INC "127x")
+res = sqlType_res && host_res; res ; sqlTypex = 1;return res;
+/*
+INC ['127.0.0.1', 'b', 'c']
+
+k1 = host INC '127.0.0.1'
+
+1+2
+ enable_ctsdb = rpl_semi_sync_master_tx_cur_wait_time > 15000000
+ enable_alarm = rpl_semi_sync_master_tx_cur_wait_time > 60000000
+ return rpl_semi_sync_master_tx_cur_wait_time
+ */
+
+
+ sqlTypeRes = sqlType INC "ADD|CREATE"
+ dbNameRes = dbName EQ "test|db1";
+ hostRes = host INC "127.0.0.13|127.0.0.1" ;
+ userRes = user INC "test";
+ sqlRes = sql REG "select.* | x0";
+ ret = sqlTpeRes && dbNameRes && hostRes && userRes && sqlRes;
+ return ret;
+
+ return  ((sqlType INC "ADD|CREATE") && (dbName EQS "test|db1") && (host INC "127.0.0.13|127.0.0.1") && (user INC "test") && (sql REG "select.*|x0")) || (dbName EQS "test")
+return (( user REG "test || root") && ( dbName EQS "test || db") && ( sqlType INC "CREATE || ALTER || DELETE") && ( sql INC "select * from tb1 || count") && ( host INC "127.1 | test.xx.com")) || (( sqlType INC "CREATE | ALTER | DELETE"));
+
+/* 图return (sqlType EQS "ADD" ||  user NEQ "test") || (host INCA ["127.0.0.1", "193.13.6.6"]);*/
+
+// done
+return (( sql EQS "sele'ct \* \(from \"tb1\"") && (sql EQS "select [a-b]*"));
+
+/*return ((sql REG "select a|b"));*/
+/*return ((sqlType EQS "CREATE") ||  (user NEQ "test") || (host INC "127.0.0.1"));*/
+/*return ((sql REG "select a\ \b\x"));*/
+/*return ((sql REG "([A-Z])\\w+   [a-z]\\w+\\a \\d")); Illegal hexadecimal escape sequence */
