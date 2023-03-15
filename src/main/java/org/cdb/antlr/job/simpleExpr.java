@@ -65,7 +65,7 @@ public class simpleExpr {
             Visitx eval = new Visitx(node);
             ValObj res = eval.visit(tree);
             System.out.println("最终结果:" + res);
-            System.out.println(Long.valueOf(String.valueOf(res.value)).longValue() == 1);
+            //System.out.println(Long.valueOf(String.valueOf(res.value)).longValue() == 1);
 
 
             ((ObjectNode)node).put("x1", "1");
