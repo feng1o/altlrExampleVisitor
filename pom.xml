@@ -100,7 +100,7 @@
                             </filters>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>org.cdb.audit.StreamingJob</mainClass>
+                                    <mainClass>org.exa.audit.StreamingJob</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>

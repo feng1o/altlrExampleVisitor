@@ -1,0 +1,1 @@
+return ((errno GT "21 || 2"));
